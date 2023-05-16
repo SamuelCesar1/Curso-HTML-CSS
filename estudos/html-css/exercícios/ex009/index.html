@@ -5,32 +5,87 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <title>Outras Formatações</title>
+    <title>Lista de Jogos Favoritos</title>
 </head>
 <body>
-    <h1>Outras Formatações</h1>
-    <h2>Código-fonte / Pré-Formatado</h2>
-    <p>O comando <code>document.getElementeById('test')</code> é escrito na linguagem JavaScript.</p>
-    
-        <pre>
-            <code>
-                num = int(input('Digite um número: '))
-                if num % 2 == 0:
-                    print(f'O número {num} é PAR!')
-                else:
-                    print(f'O número {num} é IMPAR!')
-                Print('Fim do Programa')
-            </code>
-        </pre>
-      
-    <h2>Citações</h2>
-    <p>Como diria o pai de um amigo: <q>O computador é um burro muito rápido</q>.</p>
-    <h2>Citações Completas</h2>
-    <p>Segundo a editora do livro Fundamentos de HTML5 e CSS3 de Maurício Samy Silva:</p>
-    <blockquote cite="https://www.google.com.br/books/edition/Fundamentos_de_HTML5_e_CSS3/ZyJyDwAAQBAJ?hl=pt-BR&gbpv=0">Fundamentos de HTML5 e CSS3 tem o objetivo de fornecer aos iniciantes e estudantes da área de desenvolvimento web conceitos básicos e fundamentos da marcação HTML e estilização CSS, para a criação de sites, interfaces gráficas e aplicações para a web. Maujor aborda as funcionalidades da HTML5 e das CSS3 de forma clara, em linguagem didática, mostrando vários exemplos práticos em funcionamento no site do livro. Mesmo sem conhecimento prévio, com este livro o leitor será capaz de: <br> •Criar um código totalmente semântico empregando os elementos da linguagem HTML5. <br> •Usar os atributos da linguagem HTML5 para criar elementos gráficos ricos no desenvolvimento de aplicações web. <br> •Inserir mídia sem dependência de plugins de terceiros ou extensões proprietárias. <br> •Desenvolver formulários altamente interativos com validação no lado do cliente utilizando atributos criados especialmente para essas finalidades. <br> •Conhecer os mecanismos de aplicação de estilos, sua sintaxe, suas propriedades básicas, esquemas de posicionamento, valores e unidades CSS3. <br> •Usar as propriedades avançadas das CSS3 para aplicação de fundos, bordas, sombras, cores e opacidade. •Desenvolver layouts simples com uso das CSS3.</blockquote>
-    <h2>Abreviações</h2>
-    <p>Estou estudando <abbr title="HyperText Markup Language">HTML</abbr> e <abbr title="Cascading Style Sheets">CSS</abbr>. Estou gostando muito!</p>
-    <h2>Texto Invertido</h2>
-    <p><bdo dir="rtl">Estou aprendendo a criar coisas em HTML5</bdo></p>
+    <h1>Trabalhando com Lista</h1>
+    <h2>Lista Ordenadas</h2> <!-- 1 A a I i-->
+    <ol>
+        <li>Acordar</li>
+        <li>Ligar Para o João</li>
+        <li>Tomar Café</li>
+        <li>Escovar os dentes</li>
+        <li>Ir para a faculdade</li>
+        <li>Almoçar</li>
+        <li>Ir para o trabalho</li>
+        <li>Voltar para casa</li>
+        <li>Jantar</li>
+        <li>Dormir</li>
+    </ol>
+    <h2>Listas não Ordenadas</h2> <!-- disc, circle e square-->
+    <ul>
+        <li>Pão</li>
+        <li>leite</li>
+        <li>Tomate</li>
+        <li>Manteiga</li>
+        <li>Arroz</li>
+        <li>Feijão</li>
+        <li>Alface</li>
+    </ul>
+    <h2>Minhas Linguagens Favoritas</h2>
+    <ol>
+        <li>Antigas</li>
+        <ol type="a">
+            <li>Clipper</li>
+            <li>Visual Basic</li>
+            <li>Fortran</li>
+            <li>Delphi</li>
+        </ol>
+        <li>Novas</li>
+        <ol type="a" start="5"> <!-- Essa sublista não poderia começar da 5 letra, mas por título de curiosidade o professor deixou assim, caso seja necessário consultar a atividade novamente o aluno lembre que pode utilizar a tag start para iniciar em uma ordem diferente-->
+            <li>PHP</li>
+            <li>Python</li>
+            <li>JavaScript</li>
+            <li>Kotlin</li>
+        </ol>
+    </ol>
+    <h2>Lista de Definições</h2>
+    <dl>
+        <dt>HTML</dt>
+        <dd>Linguagem de marcação para a criação do conteúdo de um site.</dd>
+        <dt>CSS</dt>
+        <dd>Linguagem de marcação para a criação do design de um site.</dd>
+        <dt>JavaScript</dt>
+        <dd>Linguagem de programação para a criação de interatividade de um site.</dd>
+    </dl>
+    <h1>Lista de Jogos de Acordo com Cada Plataforma</h1>
+    <h2>PC / Computador</h2>
+    <ul>
+        <li>The Witcher</li>
+        <ol type="I">
+            <li>The Witcher 1</li>
+            <li>The Witcher 2 </li>
+            <li>The Witcher 3 e suas DLC's </li>
+        </ol>
+        <li>No Man's Sky</li>
+        <li>Franquia Call Of Duty</li>
+        <li>Counter Strike 1.6</li>
+        <ol type="a">
+            <li>Counter Strike 1.8</li>
+            <li>Counter Strike Global</li>
+        </ol>
+        <li>State Of Decay 2</li>
+    </ul>
+    <h2>XBOX</h2>
+    <ul type="circle">
+        <li>Hallo 4</li>
+        <li>Franquia Gears Of War</li>
+    </ul>
+    <h2>Playstation</h2>
+    <ul type="square">
+        <li>Franquia God Of War</li>
+        <li>Blood Borne</li>
+        <li>Franquia Dark Souls</li>
+    </ul>   
 </body>
 </html>
