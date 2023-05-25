@@ -18,6 +18,12 @@
     </picture>
     <h1>Reproduzindo Áudio</h1>
     <p>Vamos aprender a reproduzir áudios em HTML5.</p>
-    <audio src="midia/i-had-a-feeling-tracktribe.mp3" controls autoplay></audio><!--Maneira mais simples de colocar um áudio/música em um site-->
+    <!--<audio src="midia/i-had-a-feeling-tracktribe.mp3" controls autoplay></audio>-->   <!--Maneira mais simples de colocar um áudio/música em um site-->
+    <audio preload="metadata" autoplay controls loop>
+        <source src="midia/i-had-a-feeling-tracktribe.mp3" type="audio/mpeg">
+        <!--<source src="midia/i-had-a-feeling-tracktribe.ogg" type="audio/ogg">
+        <source src="midia/i-had-a-feeling-tracktribe.wav" type="audio/wav">    Você vai utilizar essas linhhas de código caso tenha as mídias com as respectivas extenções, lembrando que são as mais aceitas pelos navegadores, Mp3, Ogg e Wav-->
+        <p>Infelizmente seu navegador não consegue reproduzir áudio. <a href="midia/i-had-a-feeling-tracktribe.mp3"> Clique aqui para baixar o arquivo Mp3</a></p>
+    </audio>
 </body>
 </html>
