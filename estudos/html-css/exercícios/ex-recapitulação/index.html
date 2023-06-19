@@ -99,5 +99,82 @@
         Agora eu acredito que ficou um pouco mais fácil para identificarmos as nossas duas estruturas de <strong>h4</strong>. São elas 2.4.2.1 e 2.4.2.2, são sub-títulos da 2.4.2 <br>
         Temos também as 2.4.3.1 e 2.4.3.2.
     </p>
+    <hr>
+    <h1>Semântica</h1>
+    <p>
+        Com o surgimento do HTML5, algumas features do HTML4 se tornaram obsoletas. <br>
+        Caso queira olhar a lista das tags, basta clicar <a href="https://www.w3.org/TR/2014/REC-html5-20141028/obsolete.html">aqui</a> para ser redirecionado para o site da W3C. Lembrando que dependendo da data em que você estiver vendo este texto, pode ter atualizado a lista. Então basta pesquisar sobre <em><u>obsolete features</u></em> no seu navegador e procurar a lista da W3C. <br>
+        <p>
+            Exemplos de tags que estão Obsoletas:
+        </p>
+        <ul>
+            <li>basefont</li>
+            <li>big</li>
+            <li>blink</li>
+            <li>center</li>
+            <li>font</li>
+            <li>marquee</li>
+            <li>multicol</li>
+            <li>nobr</li>
+            <li>spacer</li>
+            <li>tt</li>
+        </ul> 
+    </p>
+    <h1>Formatação de Formatações</h1>
+    <h2>Negrito / Destaque</h2>
+    <p>
+        Nessa frase temos um termo em <b>negrito</b> usando a tag B. Lembrando que a tag "&lt; B &gt; e &lt; /B &gt;" ela é uma tag não semântica.
+    </p>
+    <p>
+        Nessa frase temos um termo em <strong>destaque</strong> usando a tag Strong. Lembrando que a tag "&lt; strong &gt; e &lt; strong &gt;" é uma tag semântica.
+    </p>
+    <h2>Itálico / Ênfase</h2>
+    <p>
+        Nessa frase, temos um termo em <i>itálico</i> usando a tag I. Lembrando que a tag "&lt; i &gt; e &lt; /i &gt;" não é semântica.
+    </p>
+    <p>
+        Nessa frase, temos um termo em <em>ênfase</em> usando a tag EM. Lembrando que a tag "&lt; em &gt; e &lt;/em &gt; " é uma tag semântica.
+    </p>
+    <h2>Texto Marcado</h2>
+    <p>Podemos criar também um <mark>texto marcado</mark> usando a tag Mark</p>
+    <h2>Texto Sobrescrito</h2>
+    <p>para inserir textos assim: X<sup>2</sup>+3</p>
+    <h2>Texto Subscrito</h2>
+    <p>Para escrever textos assim: H<sub>2</sub>O</p>
+    <hr>
+    <h1>Outras Formatações</h1>
+    <h2>Código Fonte</h2>
+    <p>O comando <code>document.igetElementById('test')</code> é escrito em linguagem JavaScript.</p>
+    <p>A tag &lt;code&gt; é responsável por deixar a linha ou o texto selecionado monoespaçado. <br> Ex:</p>
+    <pre>
+        <code>
+    num = 1int(input('Digite um número'))
+    if num % 2 == 0:
+        Print(f 'O número {num} é PAR')
+    Else:
+        Print(f 'O número {num} é ÍMPAR')
+        </code>
+    </pre>
+    <p>A Tag &lt;pre&gt; salva a formatação que você colocou em um texto, como podemos ver no exemplo acima, deixando o código Identado.</p>
+    <h2>Citações Simples</h2>
+    <p>Como diria o pai de um amigo: <q>O computador é um burro muito rápido</q></p>
+    <h2>Citações Completas</h2>
+    <p>Segundo Diego Eis e Elcio Ferreira em seu livro HTML 5 e CSS3 Com Farinha e Pimenta:</p>
+    <blockquote cite="https://www.google.com.br/books/edition/HTML5_e_CSS3_com_farinha_e_pimenta/nDKMAwAAQBAJ?hl=pt-BR&gbpv=0">
+        Não sei quanto tempo você trabalha com web e não sei qual seu conhecimento sobre história da internet, mas saiba que nunca foi tão fácil desenvolver para web como é hoje. Nós produzimos websites acessíveis hoje por que ocorreram uma série de movimentos independentes entre browsers e profissionais da área que quebraram barreiras importantes.
+    </blockquote>
+    <h2>Abrreviações</h2>
+    <p>Estou estudando <abbr title="HyperText Markup Language">HTML</abbr> e <abbr title="Cascading Style Sheets">CSS</abbr>.</p>
+    <hr>
+    <h1>Usando Links Externos</h1>
+    <p>Você pode acessar meu <a href="https://github.com/SamuelCesar1" target="_blank" rel="external">repositório público no GitHub</a></p>
+    <h1>Link Interno</h1>
+    <p>Para acessar a Página que trás informações sobre Listas. <a href="listas.html" target="_self" rel="next">Clique aqui</a></p>
+    <p>Para acessar as noticias. <a href="noticias/noticias.html" target="_self" rel="next">Clique aqui</a></p>
+    <h1>Links Para Download</h1>
+    <ul>
+        <li><a href="livro/meulivro.pdf" type="application/pdf">Baixar o Livro em PDF</a></li>
+        <li><a href="livro/meulivro.zip" type="application/zip">Livro compactado ZIP</a></li>
+    </ul>
 </body>
 </html>
